@@ -121,7 +121,8 @@
         //     $(".firstImg").css('display', 'none');
         //     $(".secondImg").css('display', 'none');
         // }, 1000);
-    })
+    });
+        
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $("body").css("overflow-y", "scroll");
