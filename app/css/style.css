@@ -39,15 +39,23 @@ a {
 
 .intro .button {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
+    top: 33%;
+    left: 33%;
+    width: 250px;
     cursor: pointer;
+    transition: all 1s ease;
 }
 
-.intro img:not(.button) {
+.intro .pacman {
+    position: absolute;
+    top: 36%;
+    left: -10%;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.intro .firstImg, .intro .secondImg {
     float: left;
     transition: all 1s ease;
     height: 100vh;
@@ -56,18 +64,23 @@ a {
 
 .out1 {
     position: relative;
-    transform: translateX(-1000px);
+    transform: translateX(-1000px) rotate(50deg);
     opacity: 0;
 }
 
 .out2 {
     position: relative;
-    transform: translateX(+1000px);
+    transform: translateX(+1000px) rotate(180deg);
     opacity: 0;
 }
 
 .out {
-    display: none;
+    opacity:0;
+    transform: translate(+300%,-50%);
+}
+.pacout{
+    opacity: 1;
+    transform: translate(+900%,-50%);
 }
 
 

@@ -110,36 +110,22 @@
 
     $('.intro .button').click(function() {
         $(this).addClass("out");
-        $('.firstImg').addClass("out1");
+        $(".pacman").addClass("pacout");
+        $(".firstImg").addClass("out1");
         $(".secondImg").addClass("out2");
         $("body").css("overflow-y", "scroll");
         setTimeout(function() {
             $(".firstImg").css('display', 'none');
             $(".secondImg").css('display', 'none');
-        }, 1000);
+        }, 1500);
     });
 
-        $('#section4').click(function() {
-        $('#section4 .fadeout').fadeOut();
-        $('#section4 .fadeIn').addClass('bouh');
-        
-        // setTimeout(function() {
-        //     $(".firstImg").css('display', 'none');
-        //     $(".secondImg").css('display', 'none');
-        // }, 1000);
-    });
         
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
         $("body").css("overflow-y", "scroll");
         $(".intro").css("display", "none");
     };
-
-    $('#section4').click(function() {
-                $('#section4 .fadeout').fadeOut();
-                $('#section4 .fadeIn').addClass('bouh');
-});
-
 
 function topNav() {
         var hamb = $('.list');
