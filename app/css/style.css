@@ -186,7 +186,7 @@ header nav ul li a:focus {
 /*=====================================================SECTION4*/
 
 #section4 {
-    max-height: 100vh;
+    min-height: 100vh;
     padding-top: 60px;
     overflow:hidden;
     position: relative;
@@ -204,8 +204,15 @@ header nav ul li a:focus {
     display: block;
     height: 100%;
     width: 100%;
+    z-index: 10;
 }
-
+#section4 .fadein{
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: -10;
+}
 
 /*=====================================================SECTION5*/
 
