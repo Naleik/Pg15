@@ -111,6 +111,16 @@
             $(".firstImg").css('display', 'none');
             $(".secondImg").css('display', 'none');
         }, 1000);
+    });
+
+        $('#section4').click(function() {
+        $('#section4 .fadeout').fadeOut();
+        $('#section4 .fadeIn').addClass('bouh');
+        
+        // setTimeout(function() {
+        //     $(".firstImg").css('display', 'none');
+        //     $(".secondImg").css('display', 'none');
+        // }, 1000);
     })
     var scroll = $(window).scrollTop();
     if (scroll > 0) {
