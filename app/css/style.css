@@ -115,9 +115,11 @@ header nav ul li a:focus {
     border: 1px solid #ff9933;
 }
 
-.hamb{
+.hamb {
     display: none;
 }
+
+
 /*=====================================================SECTION1*/
 
 #section1 {
@@ -189,31 +191,35 @@ header nav ul li a:focus {
 #section4 {
     min-height: 100vh;
     padding-top: 60px;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
 }
-#section4 h2{
+
+#section4 h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: #fff;
     z-index: 100;
 }
+
 #section4 video {
     display: block;
     height: 100%;
     width: 100%;
     z-index: 10;
 }
-#section4 .fadein{
+
+#section4 .fadein {
     height: 100vh;
     position: absolute;
     top: 60px;
     left: 0;
     z-index: -10;
 }
+
 
 /*=====================================================SECTION5*/
 
@@ -263,17 +269,30 @@ footer {
 
 /*=====================================================RESPONSIVE*/
 
+@media screen and (max-width:780px) {
+    /*SECTION 1.5*/
+    #section1half .wrap {
+        display: block;
+    }
+    #section1half .wrap div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width:600px) {
-    body{
+    /*COMMON*/
+    body {
         overflow-y: scroll;
     }
-    .intro{
+    .intro {
         display: none;
     }
-    header{
+    /*    HEADER-MENU HAMBURGER*/
+    header {
         height: 0px;
     }
-    .logo{
+    .logo {
         display: none;
     }
     .hamb {
@@ -298,9 +317,9 @@ footer {
     }
     nav ul.list.responsive {
         display: block;
-        background: #cccc99;
         margin: auto;
         overflow-x: hidden;
+        background: #fff;
     }
     nav ul.list.responsive li {
         display: inline;
@@ -313,3 +332,4 @@ footer {
         margin: 15px auto;
         line-height: 1;
     }
+}
