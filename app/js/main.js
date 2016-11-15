@@ -45,8 +45,8 @@
     function myMap() {
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
-            center: new google.maps.LatLng(51.5, -0.2),
-            zoom: 10,
+            center: new google.maps.LatLng(48.858025, 2.346336),
+            zoom: 16,
             styles: [{
                 "featureType": "water",
                 "elementType": "geometry",
@@ -117,8 +117,9 @@
             }]
         };
         var map = new google.maps.Map(mapCanvas, mapOptions);
-    };
 
+
+    };
 
 
 
@@ -126,7 +127,7 @@
         $(this).addClass("out");
         $('.firstImg').addClass("out1");
         $(".secondImg").addClass("out2");
-        $("body").css("overflow-y","scroll");
+        $("body").css("overflow-y", "scroll");
         setTimeout(function() {
             $(".firstImg").css('display', 'none');
             $(".secondImg").css('display', 'none');
