@@ -13,6 +13,8 @@
         });
     });
 
+
+// ==========================================SKROLLR
     skrollr.init({
         easing: {
             //This easing will sure drive you crazy
@@ -98,7 +100,11 @@
             }]
         };
         var map = new google.maps.Map(mapCanvas, mapOptions);
-
+        var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(48.858025, 2.346336),
+                    map: map,
+                    title: 'Snazzy!'
+                });
 
     };
 
@@ -133,3 +139,9 @@
                 $('#section4 .fadeout').fadeOut();
                 $('#section4 .fadeIn').addClass('bouh');
 });
+
+
+function topNav() {
+        var hamb = $('.list');
+        hamb.toggleClass('responsive');
+    };

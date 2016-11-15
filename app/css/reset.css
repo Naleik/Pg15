@@ -529,16 +529,6 @@ body {
     line-height: 1.5;
 }
 
-a {
-    color: #333;
-}
-
-a:hover,
-a:focus,
-a:active {
-    color: #000;
-}
-
 ul,
 ol {
     padding-left: 2em;
