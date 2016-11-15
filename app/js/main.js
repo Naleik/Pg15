@@ -46,7 +46,7 @@
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
             center: new google.maps.LatLng(48.858025, 2.346336),
-            zoom: 16,
+            zoom: 17,
             styles: [{
                 "featureType": "water",
                 "elementType": "geometry",
