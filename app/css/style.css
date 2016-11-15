@@ -26,6 +26,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 
@@ -101,7 +102,6 @@ header nav ul li {
 
 header nav ul li a {
     padding: 10px;
-    /*color: #fff;*/
     color: #000;
 }
 
@@ -115,7 +115,9 @@ header nav ul li a:focus {
     border: 1px solid #ff9933;
 }
 
-
+.hamb{
+    display: none;
+}
 /*=====================================================SECTION1*/
 
 #section1 {
@@ -257,3 +259,57 @@ footer {
     height: 100px;
     background: #666;
 }
+
+
+/*=====================================================RESPONSIVE*/
+
+@media screen and (max-width:600px) {
+    body{
+        overflow-y: scroll;
+    }
+    .intro{
+        display: none;
+    }
+    header{
+        height: 0px;
+    }
+    .logo{
+        display: none;
+    }
+    .hamb {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 40px;
+        padding: 5px;
+        z-index: 500;
+        background: #000;
+        color: #fff;
+    }
+    nav {
+        z-index: 50;
+        position: fixed;
+        width: 100%;
+    }
+    nav ul.list li {
+        margin: 0;
+        line-height: 0;
+        display: none;
+    }
+    nav ul.list.responsive {
+        display: block;
+        background: #cccc99;
+        margin: auto;
+        overflow-x: hidden;
+    }
+    nav ul.list.responsive li {
+        display: inline;
+        line-height: 0;
+        padding: 0;
+    }
+    nav ul.list.responsive li a {
+        display: block;
+        width: 50%;
+        margin: 15px auto;
+        line-height: 1;
+    }
