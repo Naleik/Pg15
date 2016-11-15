@@ -18,6 +18,7 @@ h5,
 h6 {
     font-family: 'Merriweather';
     margin: 0;
+    text-transform: capitalize;
 }
 
 li {
@@ -76,15 +77,16 @@ header {
     position: fixed;
     width: 100%;
     height: 60px;
-   /* background: #0e141c;*/
-   background: #fff;
+    /* background: #0e141c;*/
+    background: #fff;
     z-index: 100;
 }
 
 header img {
     position: absolute;
-    margin-top: 20px;
-    margin-left: 50px;
+    top: 30px;
+    left: 30px;
+    width: 125px;
 }
 
 header nav ul {
@@ -126,14 +128,17 @@ header nav ul li a:focus {
     color: #fff;
 }
 
+
 /*=====================================================SECTION1.5*/
+
 #section1half {
     position: relative;
     min-height: 300px;
     text-align: center;
     padding: 50px 0;
 }
-#section1half .wrap{
+
+#section1half .wrap {
     max-width: 1200px;
     margin: auto;
     padding: 50px;
@@ -141,16 +146,23 @@ header nav ul li a:focus {
     justify-content: space-around;
     text-align: left;
 }
-#section1half .wrap div{
+
+#section1half .wrap div {
     width: 40%;
 }
+
 
 /*=====================================================SECTION2*/
 
 #section2 {
     min-height: 100vh;
-    background: #fff;
+    background: #000;
     border-top: 2px solid black;
+    padding-top: 60px;
+}
+
+#section2 h2 {
+    text-align: center;
 }
 
 
@@ -160,6 +172,7 @@ header nav ul li a:focus {
     min-height: 100vh;
     background: #ff6611;
     display: flex;
+    padding-top: 60px;
 }
 
 #section3 div {
@@ -173,6 +186,30 @@ header nav ul li a:focus {
 /*=====================================================SECTION4*/
 
 #section4 {
+    max-height: 100vh;
+    padding-top: 60px;
+    overflow:hidden;
+    position: relative;
+}
+#section4 h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 100;
+}
+#section4 video {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*=====================================================SECTION5*/
+
+#section5 {
     min-height: 100vh;
     background: #ff6611;
     overflow: hidden;
@@ -189,24 +226,27 @@ header nav ul li a:focus {
 
 /*=====================================================FOOTER*/
 
+
 /*=====================TO-TOP*/
 
-.to-top{
+.to-top {
     text-align: center;
     overflow-x: hidden;
     height: 70px;
 }
 
-.to-top img{
+.to-top img {
     width: 50px;
-
 }
-.to-top p{
+
+.to-top p {
     margin: 0;
     line-height: 0;
 }
 
+
 /*==========*/
+
 footer {
     height: 100px;
     background: #666;
