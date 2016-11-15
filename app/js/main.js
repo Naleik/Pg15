@@ -12,26 +12,7 @@
             }
         });
     });
-    var set = {
-        button: '#to-top',
-        min: 300,
-        fadeIn: 400,
-        fadeOut: 400,
-        scrollSpeed: 800,
-    }
-    $(window).scroll(function() {
-        var position = $(window).scrollTop();
-        if (position > set.min)
-            $(set.button).fadeIn(set.fadeIn);
-        else
-            $(set.button).fadeOut(set.fadeOut);
-    });
-    $(set.button).click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, set.scrollSpeed);
-        return false;
-    });
+
     skrollr.init({
         easing: {
             //This easing will sure drive you crazy
@@ -121,8 +102,6 @@
 
     };
 
-
-
     $('.intro .button').click(function() {
         $(this).addClass("out");
         $('.firstImg').addClass("out1");
@@ -133,3 +112,13 @@
             $(".secondImg").css('display', 'none');
         }, 1000);
     })
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $("body").css("overflow-y", "scroll");
+        $(".intro").css("display", "none");
+    };
+
+    $('#section4').click(function() {
+                $('#section4 .fadeout').fadeOut();
+                $('#section4 .fadeIn').addClass('bouh');
+});
