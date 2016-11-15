@@ -32,16 +32,17 @@
         }, set.scrollSpeed);
         return false;
     });
-skrollr.init({
-    easing: {
-        //This easing will sure drive you crazy
-        wtf: Math.random,
-        inverted: function(p) {
-            return 1 - p;
+    skrollr.init({
+        easing: {
+            //This easing will sure drive you crazy
+            wtf: Math.random,
+            inverted: function(p) {
+                return 1 - p;
+            }
         }
-    }
-});
-function myMap() {
+    });
+
+    function myMap() {
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
             center: new google.maps.LatLng(51.5, -0.2),
@@ -116,4 +117,18 @@ function myMap() {
             }]
         };
         var map = new google.maps.Map(mapCanvas, mapOptions);
-    }
+    };
+
+
+
+
+    $('.intro .button').click(function() {
+        $(this).addClass("out");
+        $('.firstImg').addClass("out1");
+        $(".secondImg").addClass("out2");
+        $("body").css("overflow-y","scroll");
+        setTimeout(function() {
+            $(".firstImg").css('display', 'none');
+            $(".secondImg").css('display', 'none');
+        }, 1000);
+    })
