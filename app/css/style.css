@@ -196,7 +196,6 @@ header nav ul li a:focus {
 
 #section2 {
     min-height: 100vh;
-    background: #000;
     border-top: 2px solid black;
     padding-top: 60px;
 }
@@ -204,7 +203,25 @@ header nav ul li a:focus {
 #section2 h2 {
     text-align: center;
 }
+#section2 .mainevent{
+    max-width: 1200px;
+    height: 400px;
+    margin: 0 auto 30px;
+    background: url('../img/event.jpg') center center no-repeat;
+}
 
+#section2 .wrap{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#section2 .wrap div{
+    min-width: 350px;
+    margin: 0 0 30px;
+}
 
 /*=====================================================SECTION3*/
 
@@ -391,13 +408,15 @@ footer {
     color: #fff;
     padding: 40px 0;
 }
-
+footer .small{
+    margin: 0 0 20px 0;
+}
 footer label {
-    margin: 10px 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 footer input {
-    margin: 20px 0;
+    margin: 10px 0;
     width: 380px;
 }
 
