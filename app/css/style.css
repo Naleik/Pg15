@@ -68,12 +68,12 @@ input {
 
 .out1 {
     position: relative;
-    transform: translateX(-1000px) rotate(50deg);
+    transform: translateX(-1000px) rotate(30deg);
 }
 
 .out2 {
     position: relative;
-    transform: translateX(+1000px) rotate(-50deg);
+    transform: translateX(+1000px) rotate(-30deg);
 }
 
 .out {
@@ -302,7 +302,7 @@ header nav ul li a:focus {
     margin: auto 0;
     transform: scale(0);
     transition: transform 1s ease;
-}
+   }
 
 #section4 .fadein .wrap {
     border-radius: 50%;
@@ -324,6 +324,9 @@ header nav ul li a:focus {
 #section4 .fadein .wrap:hover .maskc3,
 #section4 .fadein .wrap:hover .maskc4 {
     opacity: 1;
+}
+#section4 .fadein .cock{
+     border: 3px solid #001a20;
 }
 
 #section4 .fadein .cock.one {
