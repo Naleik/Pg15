@@ -17,10 +17,10 @@ h4,
 h5,
 h6 {
     font-family: 'Merriweather';
-    margin: 0;
 }
 
-h2 {
+h2,
+h3 {
     font-weight: 300;
 }
 
@@ -33,12 +33,13 @@ a {
     color: #000;
 }
 
-input{
+input {
     background: #353636;
-    color:#7b7b7b;
-    border: none;   
+    color: #7b7b7b;
+    border: none;
     padding: 10px;
 }
+
 
 /*========================================================================INTRO*/
 
@@ -173,6 +174,10 @@ header nav ul li a:focus {
     padding: 60px 0 50px 0;
 }
 
+#section1half h2{
+    margin: 0;
+}
+
 #section1half .wrap {
     max-width: 1200px;
     margin: auto;
@@ -238,19 +243,22 @@ header nav ul li a:focus {
 }
 
 #section4 h3 {
-    margin: 0 10px;
+    margin: 0 30px;
     color: #fff;
     text-transform: capitalize;
-    background: rgba(95, 155, 175, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
 }
 
 #section4 .fadeout {
     transition: all 1s ease;
 }
-#section4 .fadeout h2{
+
+#section4 .fadeout h2 {
     border: 2px solid #fff;
     padding: 10px;
 }
+
 #section4 video {
     display: block;
     object-fit: cover;
@@ -323,17 +331,26 @@ header nav ul li a:focus {
 /*=====================================================SECTION5*/
 
 #section5 {
-    min-height: 100vh;
-    background: #ff6611;
     overflow: hidden;
-    padding-top: 60px;
+    padding: 60px 0 50px 0;
+}
+#section5 h2{
+    text-align: center;
+}
+#section5 .wrap {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section5 .wrap div {
+    width: 40%;
 }
 
 #map {
-    height: 600px;
-    width: 500px;
+    height: inherit;
     background: #aaa;
-    margin: auto;
 }
 
 
@@ -366,39 +383,44 @@ footer {
     color: #fff;
     padding: 40px 0;
 }
-footer label{
-margin-right: 10px;
+
+footer label {
+    margin-right: 10px;
 }
 
-footer input{
+footer input {
     margin: 20px 0;
     width: 380px;
 }
 
-footer img{
+footer img {
     width: 75px;
     position: relative;
     bottom: 35px;
 }
 
-footer svg{
+footer svg {
     width: 75px;
-    fill:#fff;
+    fill: #fff;
 }
 
-#fb:hover{
-    fill:#3b5998;
+#fb:hover {
+    fill: #3b5998;
 }
 
-#twitter:hover{
-fill:#1da0f2;
+#twitter:hover {
+    fill: #1da0f2;
 }
-#pinterest:hover{
-fill:#bd081c;
+
+#pinterest:hover {
+    fill: #bd081c;
 }
-#youtube:hover{
-fill:#ee1c1b;
+
+#youtube:hover {
+    fill: #ee1c1b;
 }
+
+
 /*=====================================================RESPONSIVE*/
 
 @media screen and (max-width:1400px) {

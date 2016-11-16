@@ -126,3 +126,7 @@ $(".fadeout h2").css("display","none");
 $(".fadein").css("opacity","1");
 $(".fadein div").css("transform","scale(1)");
     });
+
+
+
+    
