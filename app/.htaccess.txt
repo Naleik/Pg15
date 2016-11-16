@@ -1,0 +1,1 @@
+ErrorDocument 404 file:///C:/Projects/Pg15/app/404.html
