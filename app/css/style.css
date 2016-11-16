@@ -201,14 +201,15 @@ header nav ul li a:focus {
 #section2 h2 {
     text-align: center;
 }
-#section2 .mainevent{
+
+#section2 .mainevent {
     max-width: 1200px;
     height: 400px;
     margin: 0 auto 30px;
     background: url('../img/event.jpg') center center no-repeat;
 }
 
-#section2 .wrap{
+#section2 .wrap {
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -216,27 +217,38 @@ header nav ul li a:focus {
     flex-wrap: wrap;
 }
 
-#section2 .wrap div{
+#section2 .wrap div {
     min-width: 350px;
     margin: 0 0 30px;
 }
+
 
 /*=====================================================SECTION3*/
 
 #section3 {
     min-height: 100vh;
-    background: #ff6611;
-    display: flex;
+    background: #001a20;
     padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #fff;
 }
-
-#section3 div {
-    width: 20%;
-    height: 600px;
-    background: #fff;
-    margin: auto;
+#section3 .wrap{}
+#section3 div{
+    width: 400px;
+    height: 300px;
+    padding: 10px 25px;
 }
-
+#section3 img{
+    filter: grayscale(0.5);
+    transition: all 0.5s ease;
+}
+#section3 img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+    z-index: 50;
+}
 
 /*=====================================================SECTION4*/
 
@@ -298,11 +310,10 @@ header nav ul li a:focus {
 #section4 .fadein div {
     min-width: 300px;
     min-height: 300px;
-    border-radius: 50%;
     margin: auto 0;
     transform: scale(0);
     transition: transform 1s ease;
-   }
+}
 
 #section4 .fadein .wrap {
     border-radius: 50%;
@@ -325,8 +336,9 @@ header nav ul li a:focus {
 #section4 .fadein .wrap:hover .maskc4 {
     opacity: 1;
 }
-#section4 .fadein .cock{
-     border: 3px solid #001a20;
+
+#section4 .fadein .cock {
+    border: 3px solid #001a20;
 }
 
 #section4 .fadein .cock.one {
@@ -409,9 +421,11 @@ footer {
     color: #fff;
     padding: 40px 0;
 }
-footer .small{
+
+footer .small {
     margin: 0 0 20px 0;
 }
+
 footer label {
     margin: 0 10px 0 0;
 }
