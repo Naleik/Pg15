@@ -176,17 +176,22 @@ header nav ul li a:focus {
     margin: 0;
 }
 
+#section1half img{
+    margin: 20px 0;
+}
 #section1half .wrap {
     max-width: 1200px;
     margin: auto;
-    padding: 50px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-around;
     text-align: left;
+    flex-wrap: wrap;
 }
 
 #section1half .wrap div {
     width: 40%;
+    margin: auto;
 }
 
 
@@ -491,6 +496,9 @@ footer svg {
     #section5 img {
         display: none;
     }
+     #section1half .wrap div:not(.txtleft){
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -544,7 +552,10 @@ footer svg {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:480px) {
+    #section3 img{
+        filter: grayscale(0);
+    }
     #section5 #map {
         display: none;
     }
