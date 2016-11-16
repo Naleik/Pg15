@@ -232,15 +232,19 @@ header nav ul li a:focus {
 
 #section3 {
     min-height: 100vh;
-    background: #001a20;
     padding-top: 60px;
+   
+    color: #fff;
+}
+#section3 .wrap{
+    background: #001a20;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    color: #fff;
+    max-width: 1200px;
+    margin: auto;
 }
-#section3 .wrap{}
-#section3 div{
+#section3 .wrap div{
     width: 400px;
     height: 300px;
     padding: 10px 25px;
