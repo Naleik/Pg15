@@ -48,7 +48,7 @@ a {
     transform: translate(-50%, -50%);
     width: 150px;
     cursor: pointer;
-    transition: all 1s ease;
+    transition: opacity 1s ease;
 }
 
 .intro .firstImg,
@@ -111,13 +111,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #0e141c;
-    background: #fff;
+    color: #fff;
+    background: #001a20;
 }
 
 header nav ul li a:focus {
-    color: #ff9933;
-    border: 1px solid #ff9933;
     font-weight: 600;
 }
 
@@ -137,7 +135,7 @@ header nav ul li a:focus {
     color: #fff;
 }
 
-.down{
+.down {
     position: relative;
     width: 125px;
     margin-top: 70vh;
@@ -146,14 +144,19 @@ header nav ul li a:focus {
     animation-iteration-count: infinite;
 }
 
-.down{
-
+.down {
     fill: #f00;
 }
-@keyframes down{
-    from{top:0;}
-    to{top: 5px;}
+
+@keyframes down {
+    from {
+        top: 0;
+    }
+    to {
+        top: 5px;
+    }
 }
+
 
 /*=====================================================SECTION1.5*/
 
@@ -300,7 +303,7 @@ footer {
 }
 
 @media screen and (max-width:780px) {
-    .logo{
+    .logo {
         display: none;
     }
     /*SECTION 1.5*/
