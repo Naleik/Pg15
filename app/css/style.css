@@ -19,7 +19,8 @@ h6 {
     font-family: 'Merriweather';
     margin: 0;
 }
-h2{
+
+h2 {
     font-weight: 300;
 }
 
@@ -42,23 +43,16 @@ a {
 
 .intro .button {
     position: absolute;
-    top: 33%;
-    left: 33%;
-    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
     cursor: pointer;
     transition: all 1s ease;
 }
 
-.intro .pacman {
-    position: absolute;
-    top: 36%;
-    left: -10%;
-    width: 150px;
-    cursor: pointer;
-    transition: transform 0.5s ease;
-}
-
-.intro .firstImg, .intro .secondImg {
+.intro .firstImg,
+.intro .secondImg {
     float: left;
     transition: all 1s ease;
     height: 100vh;
@@ -73,17 +67,12 @@ a {
 
 .out2 {
     position: relative;
-    transform: translateX(+1000px) rotate(180deg);
+    transform: translateX(+1000px) rotate(50deg);
     opacity: 0;
 }
 
 .out {
-    opacity:0;
-    transform: translate(+300%,-50%);
-}
-.pacout{
-    opacity: 1;
-    transform: translate(+900%,-50%);
+    opacity: 0;
 }
 
 
@@ -124,7 +113,6 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #0e141c;
     background: #fff;
-
 }
 
 header nav ul li a:focus {
@@ -289,10 +277,11 @@ footer {
 /*=====================================================RESPONSIVE*/
 
 @media screen and (max-width:1400px) {
- .intro {
+    .intro {
         display: none;
     }
 }
+
 @media screen and (max-width:780px) {
     /*SECTION 1.5*/
     #section1half .wrap {

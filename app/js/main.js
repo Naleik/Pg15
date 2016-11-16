@@ -110,7 +110,6 @@
 
     $('.intro .button').click(function() {
         $(this).addClass("out");
-        $(".pacman").addClass("pacout");
         $(".firstImg").addClass("out1");
         $(".secondImg").addClass("out2");
         $("body").css("overflow-y", "scroll");
