@@ -231,8 +231,20 @@ header nav ul li a:focus {
     z-index: 100;
     text-align: center;
 }
-#section4 .fadeout{
+
+#section4 h3 {
+    margin: 0 10px;
+    color: #fff;
+    text-transform: capitalize;
+    background: rgba(95, 155, 175, 0.5);
+}
+
+#section4 .fadeout {
     transition: all 1s ease;
+}
+#section4 .fadeout h2{
+    border: 2px solid #fff;
+    padding: 10px;
 }
 #section4 video {
     display: block;
@@ -251,8 +263,8 @@ header nav ul li a:focus {
     opacity: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     transition: 1s ease;
-    t
 }
 
 #section4 .fadein div {
@@ -264,30 +276,41 @@ header nav ul li a:focus {
     transition: transform 1s ease;
 }
 
-#section4 .wrap{
-    position: relative;
-}
-#section4 .fadein .cock1 {
-    background: url(../img/cock1.jpg) 50% 50% no-repeat;
-}
-#section4 .fadein .maskc1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    vertical-align: middle;
-    text-align: center;
+#section4 .fadein .wrap {
+    border-radius: 50%;
 }
 
-#section4 .fadein .cock2 {
+#section4 .fadein .wrap .maskc1,
+#section4 .fadein .wrap .maskc2,
+#section4 .fadein .wrap .maskc3,
+#section4 .fadein .wrap .maskc4 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+}
+
+#section4 .fadein .wrap:hover .maskc1,
+#section4 .fadein .wrap:hover .maskc2,
+#section4 .fadein .wrap:hover .maskc3,
+#section4 .fadein .wrap:hover .maskc4 {
+    opacity: 1;
+}
+
+#section4 .fadein .cock.one {
+    background: url(../img/cock1.jpg) 50% 50% no-repeat;
+}
+
+#section4 .fadein .cock.two {
+    background: url(../img/cock5.jpg) 50% 50% no-repeat;
+}
+
+#section4 .fadein .cock.three {
     background: url(../img/cock2.jpg) 50% 50% no-repeat;
 }
 
-#section4 .fadein .cock3 {
-    background: url(../img/cock3.jpg) 50% 50% no-repeat;
-}
-
-#section4 .fadein .cock4 {
+#section4 .fadein .cock.four {
     background: url(../img/cock4.jpg) 50% 50% no-repeat;
 }
 
@@ -357,6 +380,9 @@ footer {
     #section1half .wrap div {
         width: 100%;
         margin-bottom: 20px;
+    }
+    #section4 {
+        display: none;
     }
 }
 
