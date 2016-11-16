@@ -120,8 +120,8 @@ function topNav() {
     };
 
 
-    $('.fadeout').click(function(){
-$(this).css("opacity","0.5");
+    $('#section4').click(function(){
+$(".fadeout").css("opacity","0.5");
 $(".fadeout h2").css("display","none");
 $(".fadein").css("opacity","1");
 $(".fadein div").css("transform","scale(1)");
