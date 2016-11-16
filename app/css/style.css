@@ -89,7 +89,7 @@ header {
 
 header img {
     position: absolute;
-    top: 30px;
+    top: 15px;
     left: 30px;
     width: 125px;
 }
@@ -130,13 +130,30 @@ header nav ul li a:focus {
 
 #section1 {
     min-height: 100vh;
-    background: #3c3528 url(img/bg.jpg) center center no-repeat;
+    background: #3c3528 url(img/bg.jpg) center center no-repeat fixed;
     background-size: cover;
     padding-top: 60px;
     text-align: center;
     color: #fff;
 }
 
+.down{
+    position: relative;
+    width: 125px;
+    margin-top: 70vh;
+    animation-name: down;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+.down{
+
+    fill: #f00;
+}
+@keyframes down{
+    from{top:0;}
+    to{top: 5px;}
+}
 
 /*=====================================================SECTION1.5*/
 
@@ -144,7 +161,7 @@ header nav ul li a:focus {
     position: relative;
     min-height: 300px;
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0 50px 0;
 }
 
 #section1half .wrap {
@@ -283,6 +300,9 @@ footer {
 }
 
 @media screen and (max-width:780px) {
+    .logo{
+        display: none;
+    }
     /*SECTION 1.5*/
     #section1half .wrap {
         display: block;
