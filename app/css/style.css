@@ -229,8 +229,11 @@ header nav ul li a:focus {
     text-transform: uppercase;
     color: #fff;
     z-index: 100;
+    text-align: center;
 }
-
+#section4 .fadeout{
+    transition: all 1s ease;
+}
 #section4 video {
     display: block;
     object-fit: cover;
@@ -240,11 +243,52 @@ header nav ul li a:focus {
 }
 
 #section4 .fadein {
+    width: 100%;
     height: 100vh;
     position: absolute;
     top: 60px;
     left: 0;
-    z-index: -10;
+    opacity: 0;
+    display: flex;
+    justify-content: space-around;
+    transition: 1s ease;
+    t
+}
+
+#section4 .fadein div {
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: 50%;
+    margin: auto 0;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+
+#section4 .wrap{
+    position: relative;
+}
+#section4 .fadein .cock1 {
+    background: url(../img/cock1.jpg) 50% 50% no-repeat;
+}
+#section4 .fadein .maskc1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+    text-align: center;
+}
+
+#section4 .fadein .cock2 {
+    background: url(../img/cock2.jpg) 50% 50% no-repeat;
+}
+
+#section4 .fadein .cock3 {
+    background: url(../img/cock3.jpg) 50% 50% no-repeat;
+}
+
+#section4 .fadein .cock4 {
+    background: url(../img/cock4.jpg) 50% 50% no-repeat;
 }
 
 

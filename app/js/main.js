@@ -118,3 +118,11 @@ function topNav() {
         var hamb = $('.list');
         hamb.toggleClass('responsive');
     };
+
+
+    $('.fadeout').click(function(){
+$(this).css("opacity","0.5");
+$(".fadeout h2").css("display","none");
+$(".fadein").css("opacity","1");
+$(".fadein div").css("transform","scale(1)");
+    });
