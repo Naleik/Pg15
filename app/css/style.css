@@ -174,7 +174,7 @@ header nav ul li a:focus {
     padding: 60px 0 50px 0;
 }
 
-#section1half h2{
+#section1half h2 {
     margin: 0;
 }
 
@@ -334,23 +334,31 @@ header nav ul li a:focus {
     overflow: hidden;
     padding: 60px 0 50px 0;
 }
-#section5 h2{
-    text-align: center;
+
+#section5 img {
+    height: 400px;
+    position: relative;
 }
+
 #section5 .wrap {
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#section5 .wrap div {
-    width: 40%;
+#section5 .infos {
+    margin: 0 auto 30px;
+    min-width: 300px;
+    max-width: 30%;
 }
 
 #map {
     height: inherit;
     background: #aaa;
+    min-width: 480px;
+    min-height: 400px;
 }
 
 
@@ -385,7 +393,7 @@ footer {
 }
 
 footer label {
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
 }
 
 footer input {
@@ -441,7 +449,12 @@ footer svg {
         width: 100%;
         margin-bottom: 20px;
     }
+    /*SECTION 4*/
     #section4 {
+        display: none;
+    }
+    /*SECTION 5*/
+    #section5 img {
         display: none;
     }
 }
@@ -494,5 +507,11 @@ footer svg {
         width: 50%;
         margin: 15px auto;
         line-height: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #section5 #map {
+        display: none;
     }
 }
