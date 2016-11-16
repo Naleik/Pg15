@@ -13,18 +13,6 @@
         });
     });
 
-
-// ==========================================SKROLLR
-    skrollr.init({
-        easing: {
-            //This easing will sure drive you crazy
-            wtf: Math.random,
-            inverted: function(p) {
-                return 1 - p;
-            }
-        }
-    });
-
     function myMap() {
         var mapCanvas = document.getElementById("map");
         var mapOptions = {
