@@ -33,6 +33,12 @@ a {
     color: #000;
 }
 
+input{
+    background: #353636;
+    color:#7b7b7b;
+    border: none;   
+    padding: 10px;
+}
 
 /*========================================================================INTRO*/
 
@@ -226,7 +232,6 @@ header nav ul li a:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
     color: #fff;
     z-index: 100;
     text-align: center;
@@ -356,11 +361,44 @@ header nav ul li a:focus {
 /*==========*/
 
 footer {
-    height: 100px;
-    background: #666;
+    background: #15191b;
+    text-align: center;
+    color: #fff;
+    padding: 40px 0;
+}
+footer label{
+margin-right: 10px;
 }
 
+footer input{
+    margin: 20px 0;
+    width: 380px;
+}
 
+footer img{
+    width: 75px;
+    position: relative;
+    bottom: 35px;
+}
+
+footer svg{
+    width: 75px;
+    fill:#fff;
+}
+
+#fb:hover{
+    fill:#3b5998;
+}
+
+#twitter:hover{
+fill:#1da0f2;
+}
+#pinterest:hover{
+fill:#bd081c;
+}
+#youtube:hover{
+fill:#ee1c1b;
+}
 /*=====================================================RESPONSIVE*/
 
 @media screen and (max-width:1400px) {
