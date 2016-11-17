@@ -133,6 +133,8 @@ header nav ul li a:focus {
 
 .hamb {
     display: none;
+    -webkit-user-select:none;
+    user-select:none;
 }
 
 
