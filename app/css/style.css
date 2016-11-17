@@ -236,6 +236,10 @@ header nav ul li a:focus {
    
     color: #fff;
 }
+#section3 h2{
+    color: #000;
+    text-align: center;
+}
 #section3 .wrap{
     background: #001a20;
     display: flex;
@@ -243,11 +247,18 @@ header nav ul li a:focus {
     justify-content: center;
     max-width: 1200px;
     margin: auto;
+    overflow:hidden;
 }
 #section3 .wrap div{
     width: 400px;
     height: 300px;
-    padding: 10px 25px;
+    background: #001a20;
+    padding: 25px 25px;
+    transition: all 0.5s ease;
+}
+#section3 .wrap div:hover{
+    transform: scale(1.1);
+    z-index: 50;
 }
 #section3 img{
     filter: grayscale(0.5);
@@ -347,7 +358,7 @@ header nav ul li a:focus {
 }
 
 #section4 .fadein .cock {
-    border: 3px solid #001a20;
+    border: 3px solid #000;
 }
 
 #section4 .fadein .cock.one {
@@ -557,8 +568,14 @@ footer svg {
 }
 
 @media screen and (max-width:480px) {
+    #section3 .wrap img:hover, #section3 .wrap div:hover{
+transform: scale(1);
+    }
     #section3 img{
         filter: grayscale(0);
+    }
+    #section3 .wrap .hide{
+        display: none;
     }
     #section5 #map {
         display: none;
